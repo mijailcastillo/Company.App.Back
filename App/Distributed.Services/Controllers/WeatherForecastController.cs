@@ -25,7 +25,7 @@ namespace Distributed.Services.Controllers
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-10, 50),
+                TemperatureC = rng.Next(-5, 40),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
